@@ -160,14 +160,7 @@ TARGET_NO_RPC := true
 # Sensors
 USE_SENSOR_MULTI_HAL := true
 
-# Enable dexpreopt to speed boot time
-ifeq ($(HOST_OS),linux)
-  ifneq ($(TARGET_BUILD_VARIANT),eng)
-    ifeq ($(WITH_DEXPREOPT),)
-      WITH_DEXPREOPT := true
-   endif
-  endif
-endif
+      WITH_DEXPREOPT := false
 
 # Wifi
 BOARD_HAS_QCOM_WLAN := true
