@@ -24,17 +24,17 @@ $(call inherit-product, device/oneplus/oneplus2/device.mk)
 # Inherit some common JDC stuff.
 $(call inherit-product, vendor/aosp/config/common_full_phone.mk)
 
+PRODUCT_GMS_CLIENTID_BASE := android-oneplus
+
 # Device identifier. This must come after all inclusions.
 PRODUCT_NAME := aosp_oneplus2
 PRODUCT_DEVICE := oneplus2
-PRODUCT_BRAND := Oneplus
-PRODUCT_MODEL := Oneplus 2
-PRODUCT_MANUFACTURER := Oneplus
+PRODUCT_BRAND := OnePlus
+PRODUCT_MODEL := OnePlus 2
+PRODUCT_MANUFACTURER := OnePlus
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    TARGET_DEVICE="gemini" \
-    PRODUCT_NAME="gemini" \
-    BUILD_FINGERPRINT="Xiaomi/gemini/gemini:7.0/NRD90M/V8.2.1.0.NAACNEB:user/release-keys" \
-    PRIVATE_BUILD_DESC="gemini-user 7.0 NRD90M V8.2.1.0.NAACNEB release-keys"
+    BUILD_FINGERPRINT=OnePlus/OnePlus2/OnePlus2:6.0.1/MMB29M/1447840920:user/release-keys \
+    PRIVATE_BUILD_DESC="OnePlus2-user 6.0.1 MMB29M 20 dev-keys"
 
-TARGET_VENDOR := Oneplus
+TARGET_VENDOR := oneplus
